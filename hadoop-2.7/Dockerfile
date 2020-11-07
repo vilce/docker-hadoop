@@ -43,7 +43,7 @@ ENV HADOOP_VERSION=2.7.3 \
     YARN_CONF_DIR=$HADOOP_PREFIX/etc/hadoop \
     YARN_IDENT_STRING=hduser \
     HADOOP_SSH_OPTS="-F /home/hduser/.ssh/config" \
-    HADOOP_CLUSTERNAME=athlinks \
+    HADOOP_CLUSTERNAME=vilce \
     HADOOP_ROLE=STANDALONE \
     CATALINA_OUT=/dev/stdout
 

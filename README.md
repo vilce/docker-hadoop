@@ -1,7 +1,7 @@
 # Distributed Highly Available Hadoop Cluster Docker Image Based on Alpine
 
-[![DockerStars](https://img.shields.io/docker/stars/athlinks/hadoop.svg)](https://registry.hub.docker.com/u/athlinks/hadoop/)
-[![DockerPulls](https://img.shields.io/docker/pulls/athlinks/hadoop.svg)](https://registry.hub.docker.com/u/athlinks/hadoop/)
+[![DockerStars](https://img.shields.io/docker/stars/alexvilce/hadoop.svg)](https://registry.hub.docker.com/u/alexvilce/hadoop/)
+[![DockerPulls](https://img.shields.io/docker/pulls/alexvilce/hadoop.svg)](https://registry.hub.docker.com/u/alexvilce/hadoop/)
 
 ## Standalone Mode
 
@@ -13,7 +13,7 @@ docker run -d \
 -p 8088:8088 \
 -p 50070:50070 \
 -p 14000:14000 \
-athlinks/hadoop:2.7 && \
+alexvilce/hadoop:2.7 && \
 docker logs -f hadoop-standalone
 ```
 
@@ -33,7 +33,7 @@ docker exec -it hadoop-standalone bash -c "bin/hadoop jar share/hadoop/mapreduce
 Start the cluster for the first time:
 [![asciicast](https://asciinema.org/a/49052.png)](https://asciinema.org/a/49052)
 ```
-git clone https://github.com/athlinks/docker-hadoop.git
+git clone https://github.com/vilce/docker-hadoop.git
 cd docker-hadoop/hadoop-2.7
 ./initialize.sh
 ```

@@ -3,7 +3,7 @@ version: '2'
 services:
 
   master:
-    image: athlinks/hadoop:2.7
+    image: alexvilce/hadoop:2.7
     environment:
       - "HADOOP_ROLE=MASTER"
       - "HADOOP_MASTER=master"
@@ -16,7 +16,7 @@ services:
       - "14000:14000"
 
   slave:
-    image: athlinks/hadoop:2.7
+    image: alexvilce/hadoop:2.7
     environment:
       - "HADOOP_ROLE=SLAVE"
       - "HADOOP_MASTER=master"
@@ -27,7 +27,7 @@ services:
       - master
 
   client:
-    image: athlinks/hadoop:2.7
+    image: alexvilce/hadoop:2.7
     environment:
       - "HADOOP_ROLE=MS-CLIENT"
       - "HADOOP_MASTER=master"

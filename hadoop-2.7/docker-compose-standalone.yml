@@ -3,7 +3,7 @@ version: '2'
 services:
 
   standalone:
-    image: athlinks/hadoop:2.7
+    image: alexvilce/hadoop:2.7
     hostname: hadoop-standalone
     environment:
       - "SERVICE_NAME=hadoop-standalone"
